@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "spacetime.technology",
+  "Id": "e2ba0bdf-0441-4248-84f7-14f4547033af"
+}
