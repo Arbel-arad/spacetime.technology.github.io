@@ -1,118 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>spacetime.technology &lt;model-viewer&gt;</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt;">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Arbel Arad" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
-    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+	<head>
+		<title>spacetime.technology &lt;model-viewer&gt;</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="&lt;model-viewer&gt;" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Arbel Arad" />
+		<meta property="og:image" content="/assets/icons/favicon/mstile-310x310.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.spacetime.technology" />
+		<meta property="og:title" content="spacetime.technology" />
+		<meta property="og:description" content="Arbel's site" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
+		<link type="text/css" href="./styles.css" rel="stylesheet" />
+		<!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+		<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="57x57"
-      href="/assets/icons/favicon/apple-touch-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="/assets/icons/favicon/apple-touch-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="/assets/icons/favicon/apple-touch-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="/assets/icons/favicon/apple-touch-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="60x60"
-      href="/assets/icons/favicon/apple-touch-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="120x120"
-      href="/assets/icons/favicon/apple-touch-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="76x76"
-      href="/assets/icons/favicon/apple-touch-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="152x152"
-      href="/assets/icons/favicon/apple-touch-icon-152x152.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/icons/favicon/favicon-196x196.png"
-      sizes="196x196"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/icons/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/icons/favicon/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/icons/favicon/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/icons/favicon/favicon-128.png"
-      sizes="128x128"
-    />
-    <meta name="application-name" content="&nbsp;" />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta
-      name="msapplication-TileImage"
-      content="/assets/icons/favicon/mstile-144x144.png"
-    />
-    <meta
-      name="msapplication-square70x70logo"
-      content="/assets/icons/favicon/mstile-70x70.png"
-    />
-    <meta
-      name="msapplication-square150x150logo"
-      content="/assets/icons/favicon/mstile-150x150.png"
-    />
-    <meta
-      name="msapplication-wide310x150logo"
-      content="/assets/icons/favicon/mstile-310x150.png"
-    />
-    <meta
-      name="msapplication-square310x310logo"
-      content="/assets/icons/favicon/mstile-310x310.png"
-    />
-  </head>
-  <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" enable-pan src="Dw4.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.png" shadow-intensity="1.39" shadow-softness="0.56" camera-orbit="-159.3deg 78.81deg auto">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-    </model-viewer>
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  </body>
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/icons/favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/icons/favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/icons/favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/icons/favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/icons/favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/icons/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/icons/favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/icons/favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;" />
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="/assets/icons/favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="/assets/icons/favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="/assets/icons/favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="/assets/icons/favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="/assets/icons/favicon/mstile-310x310.png" />
+	</head>
+	<body>
+		<!-- <model-viewer> HTML element -->
+		<model-viewer
+			bounds="tight"
+			enable-pan
+			src="Dw4.gltf"
+			ar
+			ar-modes="webxr scene-viewer quick-look"
+			camera-controls
+			environment-image="neutral"
+			poster="poster.png"
+			shadow-intensity="1.39"
+			shadow-softness="0.56"
+			camera-orbit="-159.3deg 78.81deg auto"
+		>
+			<div class="progress-bar hide" slot="progress-bar">
+				<div class="update-bar"></div>
+			</div>
+		</model-viewer>
+		<script src="script.js"></script>
+		<!-- Loads <model-viewer> for browsers: -->
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	</body>
 </html>
